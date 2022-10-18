@@ -11,23 +11,45 @@
 
 <body>
     <div class="grid">
+        <div class="form">
+            <h3>DEBES COMPLETAR TODOS LOS CAMPOS</h3>
+            <form action="" class="formulario">
 
-        <form action="" class="formulario">
-            <input type="text" class="prioridad1" value="Introduce una tarea">
-            <select name="prioridades" id="prioridad1">
-                <option value="value1">Mensual</option>
-                <option value="value1">Diaria</option>
-                <option value="value1">Urgente</option>
-            </select>
-            <input type="submit" name="" class="btn btn-guardar" value="Guardar">
+                <input type="text" class="prioridad1" value="Introduce una tarea" onclick="this.value === ''">
+                <select name="prioridades" id="prioridad">
+                    <option value="Selecciona">Selecciona una prioridad</option>
+                    <option value="mensual">Mensual</option>
+                    <option value="diaria">Diaria</option>
+                    <option value="urgente">Urgente</option>
+                </select>
+                <button class="btnGuardar">Agregar</button>
 
-        </form>
+            </form>
 
-    </div>
+        </div>
+        <div class="form2">
+            <form action="" class="formulario2">
+
+                <select class="prioridad2">
+                    <option value="Selecciona">Selecciona una prioridad</option>
+                    <option value="mensual">Mensual</option>
+                    <option value="diaria">Diaria</option>
+                    <option value="urgente">Urgente</option>
+                </select>
+                <input type="text" value="Tarea a buscar">
+            </form>
+
+        </div>
+        <div class="tareas">
+            <article>
+                <h3>Estudiar Javascript</h3>
+                <input type="submit" class="btn btn-eliminar" value="Eliminar">
+            </article>
+        </div>
 
 
 
-    <script src="./js/funciones.js"></script>
+        <script src="./js/funciones.js"></script>
 </body>
 
 </html>
